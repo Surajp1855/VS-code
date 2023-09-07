@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python: A Versatile Programming Marvel</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="icon" type="image/icon" href="favicon.ico">
+  
+</head>
+
+<body>
+  <div id="python">
+    <nav id="navbar">
+      <div id="logo">
+        <img src="loogo.png" alt="image not found">
+      </div>
+      <ul>
+        <li class="items"><a href="index.html">Home</a></li>
+        <li class="items"><a href="#">Courses</a>
+          <div class="submenu">
+            <ul>
+              <li><a href="Python.html">Python</a></li>
+              <li><a href="Iot.html">IoT</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="items"><a href="About.html">About Us</a></li>
+        <li class="items"><a href="Contact.html">Contact Us</a></li>
+        <span id="datetime"></span>
+
+    </nav>
+    <section id="home">
+      <div class="txt2">
+        <div class="pylogo"><img src="pylogo.png " style="overflow-x:hidden;"><h1> Python: A Versatile Programming Language</h1></div>
+        Python is a high-level, interpreted, and versatile programming language that has gained immense popularity
+        since its creation in the late 1980s by Guido van Rossum. Known for its simplicity and readability, Python has
+        become a favorite among both beginners and experienced programmers. It is widely used in various domains,
+        including web development, data analysis, machine learning, scientific computing, and more.<br>
+
+        <ul class="py">Here are some key features and characteristics that make Python stand out:
+
+          <li><span>Readability</span>:Python's syntax emphasizes code readability, making it easy to write and
+            understand. The
+            use of indentation (whitespace) for block delimiters eliminates the need for braces or semicolons, resulting
+            in clean and visually consistent code.</li>
+
+          <li><span>High-Level:</span> Python is a high-level programming language, which means it abstracts many
+            low-level
+            details, making it more accessible for developers. This abstraction allows programmers to focus on solving
+            problems without getting bogged down in implementation details.</li>
+
+          <li><span>Interpreted:</span> Python is an interpreted language, which means you don't need to compile your
+            code before
+            running it. This rapid development cycle makes Python ideal for prototyping and quick iterations.</li>
+
+          <li><span>Cross-Platform:</span> Python is available on various platforms, including Windows, macOS, and
+            Linux. This
+            cross-platform compatibility allows developers to write code once and run it on different operating systems.
+          </li>
+
+          <li><span>Large Standard Library:</span> Python comes with a comprehensive standard library that provides
+            modules and
+            functions for a wide range of tasks, from file handling and networking to web development and data analysis.
+            This rich ecosystem of libraries and frameworks simplifies development and accelerates projects.</li>
+
+          <li><span>Dynamic Typing:</span> Python uses dynamic typing, which means you don't need to declare variable
+            types
+            explicitly. The interpreter infers the data type of a variable based on its value, enhancing flexibility and
+            code expressiveness.</li>
+
+          <li><span>Extensible:</span> Python allows you to integrate code written in other languages like C and C++,
+            making it
+            suitable for performance-critical tasks while retaining Python's simplicity for most of your codebase.</li>
+
+          <li><span>Community and Ecosystem:</span> Python boasts a vibrant and supportive community of developers
+            worldwide. This
+            community contributes to the language's growth, maintains a vast repository of open-source libraries, and
+            provides extensive documentation and resources.</li>
+
+          <li><span>Versatile Applications:</span> Python is used in various fields, from web development with
+            frameworks like
+            Django and Flask to data analysis and machine learning with libraries like NumPy, pandas, scikit-learn, and
+            TensorFlow.</li>
+        </ul>
+        <p>Python's versatility, ease of use, and extensive ecosystem make it an excellent choice for both beginners
+          looking to learn programming and experienced developers working on complex projects. Whether you're interested
+          in building web applications, automating tasks, analyzing data, or developing artificial intelligence
+          solutions, Python has the tools and resources to support your endeavors.</p>
+
+        <h2>Python Operators</h2>
+        <p>Operators are special symbols that perform operations on variables and values. For example,
+          <code>print(5 + 6) # 11</code>. Here, <code>+</code> is an operator that adds two numbers: 5 and 6.
+        </p>
+        <p>Python divides the operators in the following groups:</p>
+        <ul>
+          <li>Arithmetic operators</li>
+          <li>Assignment operators</li>
+          <li>Comparison operators</li>
+          <li>Logical operators</li>
+          <li>Identity operators</li>
+          <li>Membership operators</li>
+          <li>Bitwise operators</li>
+        </ul>
+        <p>In this article, we will look into different types of Python operators with examples.</p><hr>
+        <hr>
+        <h2>&#10038;  Arithmetic Operators</h2>
+        <p>Arithmetic operators are used to perform basic mathematical operations like addition, subtraction,
+          multiplication, and division.
+        </p>
+        <div class="table-resp">
+
+        <table>
+          <tr>
+            <th>Operator</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Example</th>
+          </tr>
+          <tr>
+            <td><code>+</code></td>
+            <td>Addition</td>
+            <td>Adds two operands</td>
+            <td><code>x + y</code></td>
+          </tr>
+          <tr>
+            <td><code>-</code></td>
+            <td>Subtraction</td>
+            <td>Subtracts two operands</td>
+            <td><code>x - y</code></td>
+          </tr>
+          <tr>
+            <td><code>*</code></td>
+            <td>Multiplication</td>
+            <td>Multiples two operands</td>
+            <td><code>x * y</code></td>
+          </tr>
+          <tr>
+            <td><code>/</code></td>
+            <td>Division (float)</td>
+            <td>Divides the first operand by the second and returns a floating-point number</td>
+            <td><code>x / y</code></td>
+          </tr>
+
+          <tr>
+            <td><code>%</code></td>
+            <td>Modulus Operator</td>
+            <td>produces the remainder of an integer division</td>
+            <td><code>x % y</code></td>
+          </tr>
+          <tr>
+            <td><code>**</code></td>
+            <td>Exponent Operator </td>
+            <td> returns the result of raising the first operand to the power of the second operand</td>
+            <td><code>x ** y</code></td>
+          </tr>
+          <tr>
+            <td><code>//</code></td>
+            <td>Floor Division</td>
+            <td>Divides the first operand by the second and returns a integer number</td>
+            <td><code>x // y</code></td>
+          </tr>
+        </table>
+      </div>
+        <hr>
+        <h2>&#10038;  Assignment Operators</h2>
+        <p>An assignment operator in Python is used to assign a value to a variable. The assignment operator is
+          represented by the equals sign (=), and it is used to assign a value to the left-hand side operand from the
+          right-hand side operand. </p>
+          <div class="table-resp">
+
+        <table>
+          <tr>
+            <th>Operator</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Example</th>
+            <th>Same As</th>
+          </tr>
+          <tr>
+            <td><code>=</code></td>
+            <td>Assignment Operator</td>
+            <td>Assign value of right side of expression to left side operand </td>
+            <td><code>x=y+z</code></td>
+            <td><code>x=y+z</code></td>
+          </tr>
+          <tr>
+            <td><code>+=</code></td>
+            <td>Addition Assignment Operator</td>
+            <td>Add right side operand with left side operand and then assign to left operand</td>
+            <td><code>x+=y</code></td>
+            <td><code>x=x+y</code></td>
+          </tr>
+          <tr>
+            <td><code>-=</code></td>
+            <td>Subtraction Assignment Operator</td>
+            <td> Subtract right operand from left operand and then assign to left operand: True if both operands are
+              equal</td>
+            <td><code>x-=y</code></td>
+            <td><code>x=x-y</code></td>
+          </tr>
+          <tr>
+            <td><code>*=</code></td>
+            <td>Multiplication Assignment Operator</td>
+            <td>Multiply right operand with left operand and then assign to left operand</td>
+            <td><code>x*=y</code></td>
+            <td><code>x=x*y</code></td>
+
+          </tr>
+
+          <tr>
+            <td><code>/=</code></td>
+            <td>Division Assignment Operator</td>
+            <td>Divide left operand with right operand and then assign to left operand</td>
+            <td><code>x/= y</code></td>
+            <td><code>x=x/y</code></td>
+          </tr>
+          <tr>
+            <td><code>%=</code></td>
+            <td>Modulus Assignment Operator </td>
+            <td>Takes modulus using left and right operands and assign result to left operand</td>
+            <td><code>x%=y</code></td>
+            <td><code>x=x%y</code></td>
+          </tr>
+          <tr>
+            <td><code>**=</code></td>
+            <td>Exponentiation Assignment Operator</td>
+            <td> Calculate exponent(raise power) value using operands and assign value to left operand</td>
+            <td><code>x**=y</code></td>
+            <td><code>x=x**y</code></td>
+          </tr>
+          <tr>
+            <td><code>//=</code></td>
+            <td>Floor Division Assignment Operator</td>
+            <td> Divide left operand with right operand and then assign the value(floor) to left operand</td>
+            <td><code>x//=y</code></td>
+            <td><code>x=x//y</code></td>
+          </tr>
+
+        </table>
+      </div>
+<hr>
+        <h2>&#10038;  Comparison Operators</h2>
+        <p>Comparison operators can compare numbers or strings and perform evaluations. Expressions that use comparison
+          operators do not return a number value as do arithmetic expressions. Comparison expressions return either 1,
+          which represents true, or 0, which represents false.
+        </p>
+        <div class="table-resp">
+        <table>
+          <tr>
+            <th>Operator</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Example</th>
+          </tr>
+          <tr>
+            <td><code>></code></td>
+            <td>Greater than Operator</td>
+            <td>True if the left operand is greater than the right</td>
+            <td><code>x > y</code></td>
+          </tr>
+          <tr>
+            <td><code><</code></td>
+            <td>Less than Operator</td>
+            <td>True if the left operand is less than the right</td>
+            <td><code>x < y</code></td>
+          </tr>
+          <tr>
+            <td><code>==</code></td>
+            <td>Equal to Operator</td>
+            <td>True if both operands are equal</td>
+            <td><code>x == y</code></td>
+          </tr>
+          <tr>
+            <td><code>>==</code></td>
+            <td>Greater than or equal to Operator</td>
+            <td>True if left operand is greater than or equal to the right</td>
+            <td><code>x >= y</code></td>
+          </tr>
+
+          <tr>
+            <td><code><=</code></td>
+            <td>Less than or equal to Operator</td>
+            <td>True if left operand is less than or equal to the right</td>
+            <td><code>x <= y</code></td>
+          </tr>
+          <tr>
+            <td><code>!=</code></td>
+            <td>Not equal to Operator </td>
+            <td>True if operands are not equal</td>
+            <td><code>x!=y</code></td>
+          </tr>
+        </table>
+        </div>
+        <hr>
+        <h2>&#10038;  Logical Operators</h2>
+        <p>A logical operator in Python is a special symbol that performs a logical operation on one or more boolean
+          values or expressions. A logical operation is a way of combining two or more boolean values or expressions to
+          produce a new boolean value or expression.
+        </p>
+        <div class="table-resp">
+        <table>
+          <tr>
+            <th>Operator</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Example</th>
+          </tr>
+          <tr>
+            <td><code>and</code></td>
+            <td>AND Operator</td>
+            <td>If both x and y are true then it return True otherwise
+              False</td>
+            <td><code>x and y</code></td>
+          </tr>
+          <tr>
+            <td><code>or</code></td>
+            <td>OR Operator</td>
+            <td>If either x or y is true then return True otherwise False</td>
+            <td><code>x or y</code></td>
+          </tr>
+          <tr>
+            <td><code>not</code></td>
+            <td>NOT Operator</td>
+            <td>If x is true then return false</td>
+            <td><code>not x</code></td>
+          </tr>
+        </table>
+        </div><hr>
+
+        <h2>&#10038;  Identity Operators</h2>
+        <p>Identity operators are used to compare the objects, not if they are equal, but if they are actually the same
+          object, with the same memory location.
+        </p>
+        <div class="table-resp">
+        <table>
+          <tr>
+            <th>Operator</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Example</th>
+          </tr>
+          <tr>
+            <td><code>is</code></td>
+            <td>Is Operator</td>
+            <td>Returns true if both variables are the same object</td>
+            <td><code>x is y (5 is 5 : returns True) </code></td>
+          </tr>
+          <tr>
+            <td><code>is not</code></td>
+            <td>Is Not Operator</td>
+            <td>Returns true if both variables are not the same object</td>
+            <td><code>x is not y   (5 is 6 :returns False)</code></td>
+          </tr>
+        </table>
+        </div>
+        <hr>
+        <h2>&#10038;  Membership Operator</h2>
+        <p> Membership Operator are used to check the specified value present in the sequence or not.
+        </p>
+        <div class="table-resp">
+        <table>
+          <tr>
+            <th>Operator</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Example</th>
+          </tr>
+          <tr>
+            <td><code>in</code></td>
+            <td>In Operator</td>
+            <td>Returns True if a sequence with the specified value is present in the object</td>
+            <td><code>x in y (5 in [5,4,6,86] : returns True) </code></td>
+          </tr>
+          <tr>
+            <td><code>not in</code></td>
+            <td> Not In Operator</td>
+            <td>Returns true if both variables are not the same object</td>
+            <td><code> x not in y   (5 not in [5,7,55,6] :returns False)</code></td>
+          </tr>
+        </table>
+        </div>
+        <hr>
+<h2>&#10038;Bitwise Operators</h2>
+        <p> Bitwise Operators are used to perform bitwise calculations on integers. The integers are first converted
+          into binary and then operations are performed on each bit or corresponding pair of bits, hence the name
+          bitwise operators. The result is then returned in decimal format.
+        </p>
+        <div class="table-resp">
+        <table>
+          <tr>
+            <th>Operator</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Example</th>
+          </tr>
+          <tr>
+            <td><code>&</code></td>
+            <td>Bitwise AND Operator</td>
+            <td>Result bit 1,if both operand bits are 1;otherwise results bit 0.</td>
+            <td><code>x & y</code></td>
+          </tr>
+          <tr>
+            <td><code>|</code></td>
+            <td>Bitwise OR Operator</td>
+            <td>Result bit 1,if any of the operand bit is 1; otherwise results bit 0. </td>
+            <td><code>x | y</code></td>
+          </tr>
+          <tr>
+            <td><code>~</code></td>
+            <td>Bitwise NOT Operator</td>
+            <td>inverts individual bits </td>
+            <td><code>x ~ y</code></td>
+          </tr>
+          <tr>
+            <td><code>^</code></td>
+            <td>Bitwise XOR Operator</td>
+            <td>Results bit 1,if any of the operand bit is 1 but not both, otherwise results bit 0.</td>
+            <td><code>x ^ y</code></td>
+          </tr>
+
+          <tr>
+            <td><code><<</code></td>
+            <td>Bitwise Left Shift Operator</td>
+            <td>The left operand's value is moved toward left by the number of bits specified by the right operand.</td>
+            <td><code>x << y</code></td>
+          </tr>
+          <tr>
+            <td><code>>></code></td>
+            <td>Bitwise Right Shift Operator</td>
+            <td>The left operand's value is moved toward right by the number of bits specified by the right operand.</td>
+            <td><code>x >> y</code></td>
+          </tr>
+        </table>
+        </div>
+        <br><br>
+      </div>
+      <footer>
+       <div style="height:200px; color:gray;; background-color: rgb(11, 11, 11); box-sizing: content-box;padding:15px;"> This page has copyright..</div>
+      </footer>
+
+</body>
+
+</html>

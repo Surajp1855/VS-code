@@ -1,0 +1,367 @@
+ body {
+     margin: 0px;
+     padding: 0px;
+     background-image: url('ss.jpg');
+     background-size: cover;
+     background-attachment: fixed;
+     background-repeat: no-repeat;
+     position: relative;
+
+
+
+ }
+
+ body::before {
+     content: "";
+     position: absolute;
+     top: 0px;
+     left: 0px;
+     height: 100%;
+     width: 100%;
+     z-index: -1;
+     background-color: rgba(0, 0, 0, 0.6);
+ }
+ hr {width:100%;
+  border: 2px solid #881515;
+  height: 30px;
+  border-style: solid;
+  border-color: #085e86;
+  border-width: 2px 0 0 0;
+  border-radius: 20px;
+  text-shadow: 2px 2px red;;
+}
+ .container {
+     height: 100%;
+     width: 100%;
+
+
+ }
+
+ #navbar img {
+     height: 3.8rem;
+     padding: 0;
+     margin: 5px
+ }
+
+ #navbar {
+     position: relative;
+     display: flex;
+     align-items: center;
+ }
+
+ #navbar ul {
+     display: flex;
+     width: 70%;
+     align-items: center;
+ }
+
+ #navbar ul li {
+     list-style: none;
+     font-size: 1.2rem;
+     position: relative;
+     text-align: center;
+
+
+ }
+
+ #navbar ul li a {
+     text-decoration: none;
+     display: block;
+     margin: 4px;
+     padding: 6px;
+     border-radius: 10px;
+     width: 90px;
+     text-align: center;
+     color: white;
+     background-color: rgb(0, 0, 0);
+     transition: all 1s ease-in-out;
+     font-size: 1.2rem;
+
+ }
+
+ #navbar ul li a:hover {
+     text-decoration: none;
+     display: block;
+     margin: 4px;
+     padding: 6px;
+     border-radius: 10px;
+     width: 90px;
+     text-align: center;
+     color: rgb(0, 0, 0);
+     background-color: rgb(255, 255, 255);
+
+     font-size: 1.2rem;
+
+ }
+
+ #navbar::before {
+     content: "";
+     background-color: black;
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     z-index: -1;
+     opacity: 0.5;
+ }
+
+ /*navbar nested*/
+
+ .submenu {
+     display: none;
+     position: absolute;
+     top: 100%;
+     left: 0;
+     background-color: rgb(0, 0, 0);
+     border-radius: 10px;
+     padding: 10px;
+     z-index: 1;
+ }
+
+ #navbar li:hover .submenu {
+     display: block;
+ }
+
+ .submenu ul {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+ }
+
+ .submenu ul li {
+     margin: 5px 0;
+ }
+
+ .submenu a {
+     color: white;
+     text-decoration: none;
+ }
+
+ .submenu a:hover {
+     text-decoration: underline;
+ }
+
+ /*nested over */
+ .txt,
+ .txt3 {
+     text-align: justify;
+     display: flex;
+     flex-direction: column;
+     padding: 3px 200px;
+    /* justify-content: center;*/
+     align-items: center;
+     color: white;
+ }
+
+
+ .txt h1,.txt2 h1,.txt3 h1,.txt4 h1 {
+     font-size: 2.5rem;
+     overflow-x: auto;
+ }
+
+ #home button a {
+     align-items: center;
+     text-decoration: none;
+     color: greenyellow;
+     font-weight: 800;
+ }
+
+ #home .txt button {
+     display: flex;
+     align-items: center;
+     border-radius: 5px;
+     background-color: indigo;
+     flex-direction: column;
+ }
+
+ .head {
+     font-size: 3rem;
+     font-weight: 300;
+     width: 80%;
+     height: 20vh;
+     box-sizing: border-box;
+     text-align: center;
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     letter-spacing: 10px;
+
+ }
+
+ .heading1 {
+     font-size: 30px;
+     font-weight: 400;
+ }
+
+ /*--------------------------------selection page----------------------------------------*/
+ #selection {
+     height: 100vh;
+     width: 100%;
+ }
+
+ .btn2 {
+     text-align: center;
+     font-size: large;
+     height: 80px;
+     width: 300px;
+
+ }
+
+ .btn2 a {
+     text-align: center;
+     margin: auto;
+ }
+
+ #home .txt3 a {
+    text-decoration: none;
+}
+
+#home .txt3 button {
+    display: flex;
+    border-radius: 5px;
+    background-color: indigo;
+    align-items: center;
+    color: greenyellow;
+    font-weight: 800;
+    cursor: pointer;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ /*------------------------------------------python page------------------------------------------*/
+ .table-resp{overflow-x: auto;}
+
+
+ .txt2 {
+     text-align: justify;
+     display: flex;
+     flex-direction: column;
+     padding: 3px 200px;
+     justify-content: center;
+     color: white;
+ }
+
+ .py span {
+     font-weight: 600;
+     text-decoration: underline;
+ }
+
+ .py li {
+     padding: 5px;
+ }
+
+
+ table {
+     color: black;
+     border-collapse: collapse;
+     width: 80%;
+     margin: auto;
+ }
+
+ th,
+ td {
+     border: 1px solid black;
+     padding: 10px;
+ }
+
+ th {
+     background-color: lightblue;
+ }
+
+ tr:nth-child(even) {
+     background-color: lightgray;
+ }
+
+ tr:nth-child(odd) {
+     background-color: rgb(173, 139, 139);
+ }
+
+
+/*---------------------IOT-------------------------------------*/
+.txt4 {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    color: white;
+}
+
+.iot span {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.iot li {
+    padding: 5px;
+}
+
+
+
+
+
+.pylogo{display: flex;
+align-items: center;}
+.pylogo img{
+  height: 50px;
+  width:50px;
+  margin-right: 30px;
+}
+
+
+
+
+
+/* Media query for screens with a maximum width of 768px (tablets and smaller screens) */
+@media (max-width: 768px) {
+    /* Additional styles for tablets and smaller screens */
+
+    /* Example: Adjust the header font size for tablets */
+    .head {
+        font-size: 2.5rem;
+    }
+
+    /* Example: Make the navigation menu items larger for better touch interaction on tablets */
+    #navbar ul li a {
+        }
+
+    /* Example: Reduce the padding and margins for text content on tablets */
+    .txt, .txt2, .txt3, .txt4 {
+        padding: 20px; /* Reduce padding for tablets */
+        margin: 10px; /* Reduce margins for tablets */
+    }
+#navbar li { }
+}
+
+@media (max-width: 480px) {
+
+    /* Additional styles for mobile devices */
+
+    /* Example: Adjust the header font size for mobile devices */
+    .head {
+        font-size: 2rem;
+    }
+
+    #navbar ul li a {
+        font-size: 10px;
+        padding: 5px;
+        width:22px;    }
+
+    /* Example: Further reduce padding and margins for text content on mobile devices */
+    .txt, .txt2, .txt3, .txt4 {
+        padding: 15px; /* Reduce padding for mobile devices */
+        margin: 5px; /* Reduce margins for mobile devices */
+    }
+    #navbar ul li{
+
+    }
+}
+
+/* You can continue adding media queries for other screen sizes if needed */
+
+/* Media query for screens with a maximum width of 320px (very small mobile devices) */
+@media (max-width: 320px) {*{overflow-x: auto;}
+#navbar img{height: 20px;
+width: 20px;}
+    .txt h1, .txt2 h1, .txt3 h1, .txt4 h1 {
+    font-size: 2rem;}
+    #navbar li a{font-size: 10px;
+        width:1rem;}
+    /* Example: Further reduce font sizes or make other adjustments for very small screens */
+}
