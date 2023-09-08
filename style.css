@@ -6,7 +6,8 @@
      background-attachment: fixed;
      background-repeat: no-repeat;
      position: relative;
-
+     font-family: 'roboto';
+     box-sizing: border-box;
 
 
  }
@@ -21,15 +22,88 @@
      z-index: -1;
      background-color: rgba(0, 0, 0, 0.6);
  }
- hr {width:100%;
-  border: 2px solid #881515;
-  height: 30px;
-  border-style: solid;
-  border-color: #085e86;
-  border-width: 2px 0 0 0;
-  border-radius: 20px;
-  text-shadow: 2px 2px red;;
-}
+
+ /*---------------------------footer--------------------------------*/
+ footer {
+     height: 15vh;
+     width: 100%;
+     background-color: rgb(13, 13, 13);
+     color: rgb(91, 91, 91);
+ }
+
+
+ /* Style the footer */
+ /*footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}*/
+
+ .footer-content {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     align-items: flex-start;
+     max-width: 1200px;
+     margin: 0 auto;
+ }
+
+ .footer-logo img {
+     max-width: 100px;
+     height: auto;
+ }
+
+ .footer-info {
+     margin-top: 20px;
+     flex: 1;
+ }
+
+ .footer-info h4,
+ .footer-links h4 {
+     font-size: 18px;
+     margin-bottom: 10px;
+ }
+
+ .footer-links ul {
+     list-style: none;
+ }
+
+ .footer-links li {
+     margin-bottom: 5px;
+ }
+
+ .footer-links a {
+     color: #fff;
+     text-decoration: none;
+ }
+
+ /* Responsive design */
+ @media (max-width: 768px) {
+     .footer-content {
+         flex-direction: column;
+         text-align: center;
+     }
+
+     .footer-info,
+     .footer-links {
+         margin-top: 20px;
+     }
+ }
+
+ /*----------------------------------body-----------------------------------------------*/
+ hr {
+     width: 100%;
+     border: 2px solid #881515;
+     height: 30px;
+     border-style: solid;
+     border-color: #085e86;
+     border-width: 2px 0 0 0;
+     border-radius: 20px;
+     text-shadow: 2px 2px red;
+     ;
+ }
+
  .container {
      height: 100%;
      width: 100%;
@@ -57,11 +131,8 @@
 
  #navbar ul li {
      list-style: none;
-     font-size: 1.2rem;
      position: relative;
      text-align: center;
-
-
  }
 
  #navbar ul li a {
@@ -142,36 +213,74 @@
 
  /*nested over */
  .txt,
- .txt3 {
-     text-align: justify;
-     display: flex;
-     flex-direction: column;
-     padding: 3px 200px;
-    /* justify-content: center;*/
-     align-items: center;
-     color: white;
+ .txt3
+ {
+ text-align: justify;
+ display: flex;
+ flex-direction: column;
+ padding: 3px 200px;
+ /* justify-content: center;*/
+ align-items: center;
+ color: white;
  }
 
 
- .txt h1,.txt2 h1,.txt3 h1,.txt4 h1 {
+ .txt h1,
+ .txt2 h1,
+ .txt3 h1,
+ .txt4 h1,
+ .txt5 h1 {
      font-size: 2.5rem;
      overflow-x: auto;
  }
 
+ /*
  #home button a {
      align-items: center;
      text-decoration: none;
      color: greenyellow;
      font-weight: 800;
+     width:100px;
+     height:20px;
+ }*/
+
+ .btn1 {
+     text-align: center;
+     font-size: large;
+     height: 40px;
+     width: 200px;
+
+ }
+
+ .btn1 a {
+     text-align: center;
+     margin: auto;
+ }
+
+ #home .txt a {
+     text-decoration: none;
  }
 
  #home .txt button {
      display: flex;
-     align-items: center;
      border-radius: 5px;
      background-color: indigo;
-     flex-direction: column;
+     align-items: center;
+     color: greenyellow;
+     font-weight: 800;
+     cursor: pointer;
+     justify-content: center;
+     font-family: Arial, Helvetica, sans-serif;
  }
+
+ /*#home .txt button {
+     display: flex;
+     align-items: center;
+     border-radius: 5px;
+    
+     background-color: indigo;
+     flex-direction: column;
+ }*/
 
  .head {
      font-size: 3rem;
@@ -210,22 +319,25 @@
  }
 
  #home .txt3 a {
-    text-decoration: none;
-}
+     text-decoration: none;
+ }
 
-#home .txt3 button {
-    display: flex;
-    border-radius: 5px;
-    background-color: indigo;
-    align-items: center;
-    color: greenyellow;
-    font-weight: 800;
-    cursor: pointer;
-    justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
+ #home .txt3 button {
+     display: flex;
+     border-radius: 5px;
+     background-color: indigo;
+     align-items: center;
+     color: greenyellow;
+     font-weight: 800;
+     cursor: pointer;
+     justify-content: center;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
  /*------------------------------------------python page------------------------------------------*/
- .table-resp{overflow-x: auto;}
+ .table-resp {
+     overflow-x: auto;
+ }
 
 
  .txt2 {
@@ -272,96 +384,215 @@
      background-color: rgb(173, 139, 139);
  }
 
+ .pylogo {
+     display: flex;
+     align-items: center;
+ }
 
-/*---------------------IOT-------------------------------------*/
-.txt4 {
-    text-align: justify;
-    display: flex;
-    flex-direction: column;
-    padding: 3px 200px;
-    justify-content: center;
+ .pylogo img {
+     height: 50px;
+     width: 50px;
+     margin-right: 30px;
+ }
+
+
+ /*---------------------IOT-------------------------------------*/
+ .txt4 {
+     text-align: justify;
+     display: flex;
+     flex-direction: column;
+     padding: 3px 200px;
+     justify-content: center;
+     color: white;
+ }
+
+ .iot span {
+     font-weight: 600;
+     text-decoration: underline;
+ }
+
+ div.iot-comp img {
+     width: 98%
+ }
+
+ div.iot-comp1 img {
+     width: 100%;
+     margin: 20px 0px 20px 0px;
+     height: 50vh;
+ }
+
+ div.iot-comp {
+     background-color: antiquewhite;
+ }
+
+ .iot li {
+     padding: 5px;
+ }
+
+
+
+
+
+
+ span.iot-part {
+     font-size: 1.2rem;
+     text-decoration: underline;
+     font-weight: 400;
+ }
+/*--------------------------About us-----------------------------------------------*/
+.txt6{
     color: white;
+    background-color: #030607;
+    font-family: Arial, sans-serif;
 }
-
-.iot span {
-    font-weight: 600;
-    text-decoration: underline;
+.hd1{font-size: 3.5rem;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-align: center;
+text-shadow:1px 1px 9px crimson,-1px -1px 9px rgb(21, 128, 182);}
+.hd2{font-size: 2.5rem;
+font-family: Georgia, 'Times New Roman', Times, serif;
+text-align: center;
 }
+.hd2-1{color: aqua;
+text-shadow:1px 1px 7px chartreuse, -1px -1px 7px red;}
+.para{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+padding: auto;
+margin: 1rem;
+text-align:justify ;
+border: 0 solid aqua;
+padding: 5px;
+border-radius: 15px;
+/*box-shadow:1px 1px 8px blue;*/}
+.hd3{font-size: 1.5rem;
+    width: 16rem;
+    padding: 1rem;
+    border-bottom: 0px solid pink;
+    color: rgb(195, 44, 14);
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+text-shadow: 2px 2px 9px rgb(145, 72, 193) ;}
+ /*--------------------------------Contact us------------------------------------*/
+ .contact-info {
+     background-color: #fff;
+     border-radius: 10px;
+     padding: 20px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+     max-width: 400px;
+     margin: 0 auto;
+     color: #030607;
+     border: 2px solid black;
+     box-shadow:8px 10px 4px #c13b01,-4px -6px 7px yellow,11px 15px 10px green,-14px -12px 12px aqua ;
+ }
 
-.iot li {
-    padding: 5px;
-}
+ .txt5 {
+     text-align: center;
+     font-family: Arial, sans-serif;
+     height: 69vh;
+ }
+ 
+ .txt5 h1 {
+     color: rgb(5, 252, 252);
+ }
 
+ .thank-you {
+     margin-top: 20px;
+     font-size: 24px;
+     color: #555;
+ }
 
+ /*<------------------------------Media Query--------------------------------------*/
 
+ @media (max-width: 768px) {
 
+     .head {
+         font-size: 2.5rem;
+     }
 
-.pylogo{display: flex;
-align-items: center;}
-.pylogo img{
-  height: 50px;
-  width:50px;
-  margin-right: 30px;
-}
+     /* #navbar ul li a {}*/
 
+     .txt,
+     .txt2,
+     .txt3,
+     .txt4 {
+         padding: 20px;
+         margin: 10px;
+     }
 
+     /* #navbar li {}*/
+ }
 
+ @media (max-width: 480px) {
+     .head {
+         font-size: 2rem;
+     }
 
+     #navbar div,
+     #navbar ul {
+         overflow-x: auto;
+     }
 
-/* Media query for screens with a maximum width of 768px (tablets and smaller screens) */
-@media (max-width: 768px) {
-    /* Additional styles for tablets and smaller screens */
+     #navbar ul li a {
+         font-size: 10px;
+         padding: 3px;
+         width: 45px;
+     }
 
-    /* Example: Adjust the header font size for tablets */
-    .head {
-        font-size: 2.5rem;
-    }
+     .txt,
+     .txt2,
+     .txt3,
+     .txt4 {
+         padding: 15px;
+         margin: 5px;
+     }
 
-    /* Example: Make the navigation menu items larger for better touch interaction on tablets */
-    #navbar ul li a {
-        }
+     /*   #navbar ul li {}
+ }*/
+ }
 
-    /* Example: Reduce the padding and margins for text content on tablets */
-    .txt, .txt2, .txt3, .txt4 {
-        padding: 20px; /* Reduce padding for tablets */
-        margin: 10px; /* Reduce margins for tablets */
-    }
-#navbar li { }
-}
+ @media (max-width: 320px) {
+     * {
+         overflow-x: auto;
+     }
 
-@media (max-width: 480px) {
+     .pylogo img {
+         height: 40px;
+         width: 125px;
+         margin-right: 12px;
+     }
 
-    /* Additional styles for mobile devices */
+     #navbar img {
+         height: 30px;
+         width: 30px;
+     }
 
-    /* Example: Adjust the header font size for mobile devices */
-    .head {
-        font-size: 2rem;
-    }
+     .txt h1,
+     .txt2 h1,
+     .txt3 h1,
+     .txt4 h1 {
+         font-size: 1.5rem;
+     }
 
-    #navbar ul li a {
-        font-size: 10px;
-        padding: 5px;
-        width:22px;    }
+     #navbar li a,
+     #navbar li {
+         font-size: 10px;
+         /* width: 3.5rem;*/
+     }
 
-    /* Example: Further reduce padding and margins for text content on mobile devices */
-    .txt, .txt2, .txt3, .txt4 {
-        padding: 15px; /* Reduce padding for mobile devices */
-        margin: 5px; /* Reduce margins for mobile devices */
-    }
-    #navbar ul li{
+     #navbar ul {
+         padding-left: 10px;
+         margin: 0px 5px 0px 5px;
+     }
 
-    }
-}
+     #navbar ul li a:hover {
+         text-decoration: none;
+         display: block;
+         margin: 4px;
+         padding: 6px;
+         border-radius: 10px;
+         width: 40px;
+         text-align: center;
+         color: rgb(0, 0, 0);
+         background-color: rgb(255, 255, 255);
 
-/* You can continue adding media queries for other screen sizes if needed */
-
-/* Media query for screens with a maximum width of 320px (very small mobile devices) */
-@media (max-width: 320px) {*{overflow-x: auto;}
-#navbar img{height: 20px;
-width: 20px;}
-    .txt h1, .txt2 h1, .txt3 h1, .txt4 h1 {
-    font-size: 2rem;}
-    #navbar li a{font-size: 10px;
-        width:1rem;}
-    /* Example: Further reduce font sizes or make other adjustments for very small screens */
-}
+         font-size: 10px;
+     }
+ }
