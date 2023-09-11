@@ -716,7 +716,8 @@ body.contact::before {
      /** {
          overflow-x: auto;
      }*/
-
+     div.iot-comp1 img {
+        height: 10rem;}
      div.contact-info {
 
          padding: 6px;
