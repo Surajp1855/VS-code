@@ -799,7 +799,6 @@ body.contact::before {
      #navbar ul li a:hover {
          text-decoration: none;
          display: block;
-         margin: 4px;
          padding: 3px;
          border-radius: 10px;
          width: 3rem;
