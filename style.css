@@ -333,7 +333,7 @@
  }
 
  .py span {
-     color: #de66aa;
+     color: #4d76c9;
  }
 
  .txt2 {
@@ -409,7 +409,7 @@
  }
 
  .iot-subhead {
-     color: #de66aa;
+    color: #66c5de;
      font-weight: 700;
  }
 
@@ -421,9 +421,15 @@
  div.iot-comp img {
      width: 98%
  }
-
+.subheaad{font-size: 1.2rem;
+font-weight: 800;
+color: rgb(212, 240, 141);
+}
  dt {
      color: rgb(212, 240, 141);
+     font-size: 1.2rem;
+     margin: 2px 0px 2px 0px;
+     font-weight: 800;
  }
 
  div.iot-comp1 img {
